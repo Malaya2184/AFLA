@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Spam Detection System</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='styleo.css') }}">
+
+</head>
+
+<body>
+	
+	<div class="xyz">
+		<div class="login">
+			<h1>An Intellegent Spam Detection System</h1>
+		
+			<form action="{{ url_for('predict')}}" method="POST">
+				<textarea  name="message" rows="6" cols="50" required="required"></textarea>
+				<br> </br>
+				<button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+		
+					<div class="results">
+		
+			{% if prediction == 1%}
+			<h2 style="color:red;">Looking Spam, Stay Away From It</h2>
+			{% elif prediction == 0%}
+						<h2 style="color:green;"><b>Not a Spam</b></h2>
+			{% endif %}
+		
+			</div>
+		
+			</form>
+		
+		</div>
+	</div>
+</body>

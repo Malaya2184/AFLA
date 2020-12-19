@@ -1,7 +1,7 @@
 body{
     padding: 0px;
     margin: 0px auto;
-    background-color:whitesmoke;
+    background-color: rgb(238, 237, 200);
     
 }
 .container_1{
@@ -12,6 +12,7 @@ body{
     flex-direction: row;
     justify-content: center;
     justify-self: center;
+   
 
 }
 .container_2{
@@ -21,7 +22,7 @@ body{
     flex-direction: row;
     justify-content: center;
     justify-self: center;
-
+   
 }
 .boxes{
     padding: 10px;
@@ -72,13 +73,12 @@ body{
     align-content: flex-start;
 }
 #degn{
-    color: rgb(71, 31, 19);
-    font-size: 22px;
+    color: rgb(29, 26, 24);
+    font-size: 18px;
 }
 h1{
-    color: rgb(21, 16, 65);
+    color: rgb(22, 39, 3);
     text-align: center;
-    font-style: italic;
 }
 img{
     padding: 10px;
@@ -93,12 +93,17 @@ h2{
    padding: 0px;
     text-transform: capitalize;
     text-align: center;
-    
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    color: rgb(5, 76, 85);
 
 }
 .about{
     padding: 0px;
     text-align: center;
+    margin: 20px;
+    font-size: 20px;
+    color: rgb(104, 50, 12);
 }
 .box{
     margin: 0px;
@@ -116,14 +121,44 @@ h2{
 .data_img{
     height: 400px;
     width: 1000px;
+    align-content: center;
 }
 .logos{
+    background-color: rgb(115, 119, 119);
+    margin: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    text-justify: auto;
+    
 }
 .logo1head{
 display: flex;
+justify-content: center;
 }
 .logo2head{
 display: flex;
+justify-content: center;
+}
+h3{
+    padding: 10px;
+    margin: 10px;
+    
+}
+.algo{
+    margin: 10px;
+   
+    color: rgb(68, 41, 6);
+    
+}
+.data{
+    margin: 10%;
+    font-size: 22px;
+}
+.compare{
+   margin-left: 7%;
+    text-transform: uppercase;
+    font-size: 22px;
 }

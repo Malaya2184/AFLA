@@ -117,3 +117,13 @@ h2{
     height: 400px;
     width: 1000px;
 }
+.logos{
+    display: flex;
+    flex-direction: column;
+}
+.logo1head{
+display: flex;
+}
+.logo2head{
+display: flex;
+}
